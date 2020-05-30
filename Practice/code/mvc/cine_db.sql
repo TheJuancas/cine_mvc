@@ -32,7 +32,7 @@ create table if not exists asientos
 	id_as int not null auto_increment,
     id_sala int not null,
     num_as int not null,
-    fila_as varchar(1),
+    fila_as int not null,
     primary key(id_as),
     CONSTRAINT fk_sala FOREIGN KEY (id_sala)
     REFERENCES salas(id_sala)
