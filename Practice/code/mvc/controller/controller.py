@@ -503,8 +503,6 @@ class Controller:
         self.view.msg('Ingresa los valores a modificar (vacio para dejarlo igual):')
         whole_vals = self.ask_peli()
         fields, vals = self.update_lists(['titulo_p','duracion_p', 'director_p','sinopsis'],whole_vals)
-        for f in fields:
-            print(f)
         vals.append(id_p)
         vals = tuple(vals)
         out = self.model.actualizar_peli(fields,vals)
