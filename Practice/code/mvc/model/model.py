@@ -190,7 +190,6 @@ class Model:
     def actualizar_peli(self, fields, vals):
         try:
             sql = 'UPDATE peliculas SET ' + ','.join(fields)+' WHERE id_peli = %s'
-            print(sql)
             self.cursor.execute(sql, vals)
             self.cnx.commit()
             return True
