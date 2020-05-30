@@ -1,0 +1,4 @@
+user:root
+password:juancas1998
+host:localhost
+database:cine_db
